@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Best Website</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Hero Section */
+        .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: center; padding: 100px 0; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 20px; animation: fadeInUp 1s ease; }
+        .hero p { font-size: 1.3rem; margin-bottom: 40px; animation: fadeInUp 1s ease 0.2s both; }
+        .cta { display: inline-block; background: #ff6b6b; color: white; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; transition: transform 0.3s, box-shadow 0.3s; }
+        .cta:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(255,107,107,0.4); }
+
+        /* Features */
+        .features { padding: 80px 0; background: #f8f9fa; }
+        .features h2 { text-align: center; font-size: 2.5rem; margin-bottom: 60px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        .feature { text-align: center; padding: 40px 20px; background: white; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .feature:hover { transform: translateY(-10px); }
+        .feature i { font-size: 3rem; color: #667eea; margin-bottom: 20px; }
+        .feature h3 { font-size: 1.5rem; margin-bottom: 15px; }
+
+        /* Footer */
+        .footer { background: #333; color: white; text-align: center; padding: 40px 0; }
+        
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        
+        @media (max-width: 768px) { .hero h1 { font-size: 2.5rem; } .hero { padding: 60px 0; } }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to the Best Website</h1>
+            <p>Lightning-fast, beautiful, and built to convert. Your dream site starts here.</p>
+            <a href="#features" class="cta">Get Started Free</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Why We're the Best</h2>
+            <div class="grid">
+                <div class="feature">
+                    <div>🚀</div>
+                    <h3>Blazing Fast</h3>
+                    <p>Optimized for speed with modern web standards. Scores 100/100 on Lighthouse.</p>
+                </div>
+                <div class="feature">
+                    <div>🎨</div>
+                    <h3>Stunning Design</h3>
+                    <p>Responsive, modern UI that works on every device. No design skills needed.</p>
+                </div>
+                <div class="feature">
+                    <div>⚡</div>
+                    <h3>Easy to Customize</h3>
+                   
